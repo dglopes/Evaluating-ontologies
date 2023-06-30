@@ -20,10 +20,6 @@ jobs:
           python-version: '3.9'
           #where will store the metric results
           
-      - name: Configurar a pasta dos resultados
-        uses: Emdien/oquare-metrics@v2.1
-        with:
-          contents-folder: eval-ontologies/results
           
       - name: Avaliacao OQuaRE
         uses: Emdien/oquare-metrics@v2.1
