@@ -20,14 +20,14 @@ jobs:
           python-version: '3.9'
           #where will store the metric results
           
-      - name: Ontology folder configuration
+      - name: Configurar a pasta dos resultados
         uses: Emdien/oquare-metrics@v2.1
         with:
           contents-folder: eval-ontologies/results
           
-      - name: OQuaRE evaluation
+      - name: Avaliacao OQuaRE
         uses: Emdien/oquare-metrics@v2.1
         with:
           ontology-folders: eval-ontologies
-          ontology-files: bot.rdf
-          model-plot: true
+          ontology-files: bot-0.3.2.ttl
+          #model-plot: true
