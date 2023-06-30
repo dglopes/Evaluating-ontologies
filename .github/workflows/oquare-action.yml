@@ -19,8 +19,11 @@ jobs:
         with:
           python-version: '3.9'
           #where will store the metric results
-          contents-folder: eval-ontologies/results
           
+        name: Ontology folder configuration
+        uses: Emdien/oquare-metrics@v2.1
+        with:
+          contents-folder: eval-ontologies/results
           
       - name: OQuaRE evaluation
         uses: Emdien/oquare-metrics@v2.1
