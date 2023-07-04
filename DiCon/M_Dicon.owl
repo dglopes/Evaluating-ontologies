@@ -1,100 +1,94 @@
-@prefix : <http://www.semanticweb.org/dglop/ontologies/2023/6/untitled-ontology-40#> .
+@prefix : <urn:absolute:#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/dglop/ontologies/2023/6/untitled-ontology-40> .
+@base <urn:absolute:> .
 
-<http://www.semanticweb.org/dglop/ontologies/2023/6/untitled-ontology-40> rdf:type owl:Ontology ;
-                                                                           owl:imports <https://w3id.org/digitalconstruction/0.5/Agents/agents.ttl> ,
-                                                                                       <https://w3id.org/digitalconstruction/0.5/Contexts/contexts.ttl> ,
-                                                                                       <https://w3id.org/digitalconstruction/0.5/Entities/entities.ttl> ,
-                                                                                       <https://w3id.org/digitalconstruction/0.5/Information/information.ttl> ,
-                                                                                       <https://w3id.org/digitalconstruction/0.5/Processes/processes.ttl> ,
-                                                                                       <https://w3id.org/digitalconstruction/0.5/Variables/variables.ttl> ;
-                                                                           <http://purl.org/dc/elements/1.1/creator> "Kostas Tsatsakis" ,
-                                                                                                                     "Seppo Törmä" ,
-                                                                                                                     "Spiros Kousouris" ,
-                                                                                                                     "Yuan Zheng" ;
-                                                                           <http://purl.org/dc/elements/1.1/date> "2020-03-20" ,
-                                                                                                                  "2020-04-24" ,
-                                                                                                                  "2021-03-31" ,
-                                                                                                                  "2021-04-06" ,
-                                                                                                                  "2021-04-12" ,
-                                                                                                                  "2021-04-15" ;
-                                                                           <http://purl.org/dc/elements/1.1/description> "Digital Construction Occupancy ontology represents those aspects of construction and renovation projects that concern the comfort, safety and health of occupants, including visual and thermal comfort, indoor air quality and building acoustics, as well as related sensor observations." ;
-                                                                           <http://purl.org/dc/elements/1.1/license> "<http://creativecommons.org/licenses/by/4.0/>"^^rdfs:Literal ;
-                                                                           <http://purl.org/dc/elements/1.1/title> "Digital Construction Agents" ,
-                                                                                                                   "Digital Construction Contexts" ,
-                                                                                                                   "Digital Construction Entities" ,
-                                                                                                                   "Digital Construction Information" ,
-                                                                                                                   "Digital Construction Occupancy" ,
-                                                                                                                   "Digital Construction Processes" ,
-                                                                                                                   "Digital Construction Variables" ;
-                                                                           <http://purl.org/dc/terms/abstract> "An ontology for energy systems and energy efficiency in the construction and renovation domain" ,
-                                                                                                               "Context ontology provides the basic representation mechanisms for multi-context information present in all contruction and renovation projects, including planned and actual values, as-designed and as-built models, and different levels of detail/development. The ontology allows the definition of different context frameworks, to create contexts withing the frameworks, and associating content to contexts. At the implementation level, the content is stored in different named graphs of an RDF Dataset and the representation of context frameworks anbd contexts are managed in the default graph of the RDF Dataset." ,
-                                                                                                               "Ontology of properties, property states, measurements, constraints, and values. The ontology allows the objectification of basic properties, and therefor the addition of their quantity types, units of measure, value time, variables and constraints." ,
-                                                                                                               "Processes ontology defines the concepts and relations for activities and resources. " ;
-                                                                           <http://purl.org/dc/terms/contributor> "Seppo Törmä" ,
-                                                                                                                  "Seppo Törmä (seppo.torma@visualynk.com)"^^xsd:string ;
-                                                                           <http://purl.org/dc/terms/created> "2019-12-20" ,
-                                                                                                              "2020-01-12" ;
-                                                                           <http://purl.org/dc/terms/creator> "Janakiram Karlapudi (janakiram.karlapudi@tu-dresden.de)"^^xsd:string ,
-                                                                                                              "Kostas Tsatsakis" ,
-                                                                                                              "Prathap Valluru (prathap.valluru@tu-dresden.de)"^^xsd:string ,
-                                                                                                              "Seppo Törmä" ,
-                                                                                                              "Spiros Kousouris" ,
-                                                                                                              "Yuan Zheng" ;
-                                                                           <http://purl.org/dc/terms/date> "2020-06-18T12:00:00"^^xsd:dateTime ;
-                                                                           <http://purl.org/dc/terms/description> "An ontology for energy systems and energy efficiency in the construction and renovation domain" ,
-                                                                                                                  "Context ontology provides the basic representation mechanisms for multi-context information in contruction and renovation projects" ,
-                                                                                                                  "Process ontology for digital construction" ,
-                                                                                                                  "The Material Ontology defining the main concepts of building material, type and its properties."^^rdfs:Literal ,
-                                                                                                                  "The objectified property representation is orthogonal to the other definitions in the ontologies: any property can be objectified and consequently be subject of constraints. " ;
-                                                                           <http://purl.org/dc/terms/issued> "2021-04-21T16:00:00"^^xsd:dateTime ;
-                                                                           <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                                                                           <http://purl.org/dc/terms/publisher> "SUITE5" ;
-                                                                           <http://purl.org/dc/terms/title> "Digital Construction Energy" ,
-                                                                                                            "Digital Construction Lifecycle"^^xsd:string ,
-                                                                                                            "Digital Construction Materials"^^rdfs:Literal ;
-                                                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "dica" ,
-                                                                                                                                 "dicc" ,
-                                                                                                                                 "dice" ,
-                                                                                                                                 "dices:" ,
-                                                                                                                                 "dici" ,
-                                                                                                                                 "dicl"^^xsd:string ,
-                                                                                                                                 "dicm"^^rdfs:Literal ,
-                                                                                                                                 "dicob" ,
-                                                                                                                                 "dicp" ,
-                                                                                                                                 "dicv" ;
-                                                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/0.5/Agents" ,
-                                                                                                                              "https://w3id.org/digitalconstruction/0.5/Contexts" ,
-                                                                                                                              "https://w3id.org/digitalconstruction/0.5/Energy" ,
-                                                                                                                              "https://w3id.org/digitalconstruction/0.5/Entities" ,
-                                                                                                                              "https://w3id.org/digitalconstruction/0.5/Information" ,
-                                                                                                                              "https://w3id.org/digitalconstruction/0.5/Lifecycle" ,
-                                                                                                                              "https://w3id.org/digitalconstruction/0.5/Materials"^^rdfs:Literal ,
-                                                                                                                              "https://w3id.org/digitalconstruction/0.5/Occupancy" ,
-                                                                                                                              "https://w3id.org/digitalconstruction/0.5/Processes" ,
-                                                                                                                              "https://w3id.org/digitalconstruction/0.5/Variables" ;
-                                                                           rdfs:comment "Agents ontology formalize the the representation of the actors and stakeholders over the construction lifecycle, to support data sharing of the social, organizational and contractural relations. The ontology is aligned with BFO, FOAF and ORG." ,
-                                                                                        "An ontology to represent the enhancement of building data throughout the construction lifecycle stages"^^xsd:string ,
-                                                                                        "Digital Construction Entities Ontology defines the basic classes and properties needed for the representation of construction and renovation projects. Examples are building object, location, material batch, equipment, agent, information content entity, activity and related time concepts. The ontology is based on BFO. " ,
-                                                                                        "Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print)." ,
-                                                                                        "Digital Construction Occupancy ontology represents those aspects of construction and renovation projects that concern the comfort, safety and health of occupants, including visual and thermal comfort, indoor air quality and building acoustics, as well as related sensor observations." ;
-                                                                           rdfs:label "Digital Construction Agents" ,
-                                                                                      "Digital Construction Contexts" ,
-                                                                                      "Digital Construction Energy" ,
-                                                                                      "Digital Construction Entities" ,
-                                                                                      "Digital Construction Information" ,
-                                                                                      "Digital Construction Occupancy" ,
-                                                                                      "Digital Construction Processes" ,
-                                                                                      "Digital Construction Variables" ;
-                                                                           rdfs:seeAlso <https://w3id.org/digitalconstruction/0.5> ,
-                                                                                        <https://w3id.org/digitalconstruction/0.5/> ,
-                                                                                        "https://w3id.org/digitalconstruction/0.5"^^xsd:string ;
-                                                                           owl:versionInfo "0.5"^^xsd:string .
+<urn:absolute:> rdf:type owl:Ontology ;
+                 <http://purl.org/dc/elements/1.1/creator> "Kostas Tsatsakis" ,
+                                                           "Seppo Törmä" ,
+                                                           "Spiros Kousouris" ,
+                                                           "Yuan Zheng" ;
+                 <http://purl.org/dc/elements/1.1/date> "2020-03-20" ,
+                                                        "2020-04-24" ,
+                                                        "2021-03-31" ,
+                                                        "2021-04-06" ,
+                                                        "2021-04-12" ,
+                                                        "2021-04-15" ;
+                 <http://purl.org/dc/elements/1.1/description> "Digital Construction Occupancy ontology represents those aspects of construction and renovation projects that concern the comfort, safety and health of occupants, including visual and thermal comfort, indoor air quality and building acoustics, as well as related sensor observations." ;
+                 <http://purl.org/dc/elements/1.1/license> "<http://creativecommons.org/licenses/by/4.0/>"^^rdfs:Literal ;
+                 <http://purl.org/dc/elements/1.1/title> "Digital Construction Agents" ,
+                                                         "Digital Construction Contexts" ,
+                                                         "Digital Construction Entities" ,
+                                                         "Digital Construction Information" ,
+                                                         "Digital Construction Occupancy" ,
+                                                         "Digital Construction Processes" ,
+                                                         "Digital Construction Variables" ;
+                 <http://purl.org/dc/terms/abstract> "An ontology for energy systems and energy efficiency in the construction and renovation domain" ,
+                                                     "Context ontology provides the basic representation mechanisms for multi-context information present in all contruction and renovation projects, including planned and actual values, as-designed and as-built models, and different levels of detail/development. The ontology allows the definition of different context frameworks, to create contexts withing the frameworks, and associating content to contexts. At the implementation level, the content is stored in different named graphs of an RDF Dataset and the representation of context frameworks anbd contexts are managed in the default graph of the RDF Dataset." ,
+                                                     "Ontology of properties, property states, measurements, constraints, and values. The ontology allows the objectification of basic properties, and therefor the addition of their quantity types, units of measure, value time, variables and constraints." ,
+                                                     "Processes ontology defines the concepts and relations for activities and resources. " ;
+                 <http://purl.org/dc/terms/contributor> "Seppo Törmä" ,
+                                                        "Seppo Törmä (seppo.torma@visualynk.com)"^^xsd:string ;
+                 <http://purl.org/dc/terms/created> "2019-12-20" ,
+                                                    "2020-01-12" ;
+                 <http://purl.org/dc/terms/creator> "Janakiram Karlapudi (janakiram.karlapudi@tu-dresden.de)"^^xsd:string ,
+                                                    "Kostas Tsatsakis" ,
+                                                    "Prathap Valluru (prathap.valluru@tu-dresden.de)"^^xsd:string ,
+                                                    "Seppo Törmä" ,
+                                                    "Spiros Kousouris" ,
+                                                    "Yuan Zheng" ;
+                 <http://purl.org/dc/terms/date> "2020-06-18T12:00:00"^^xsd:dateTime ;
+                 <http://purl.org/dc/terms/description> "An ontology for energy systems and energy efficiency in the construction and renovation domain" ,
+                                                        "Context ontology provides the basic representation mechanisms for multi-context information in contruction and renovation projects" ,
+                                                        "Process ontology for digital construction" ,
+                                                        "The Material Ontology defining the main concepts of building material, type and its properties."^^rdfs:Literal ,
+                                                        "The objectified property representation is orthogonal to the other definitions in the ontologies: any property can be objectified and consequently be subject of constraints. " ;
+                 <http://purl.org/dc/terms/issued> "2021-04-21T16:00:00"^^xsd:dateTime ;
+                 <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                 <http://purl.org/dc/terms/publisher> "SUITE5" ;
+                 <http://purl.org/dc/terms/title> "Digital Construction Energy" ,
+                                                  "Digital Construction Lifecycle"^^xsd:string ,
+                                                  "Digital Construction Materials"^^rdfs:Literal ;
+                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "dica" ,
+                                                                       "dicc" ,
+                                                                       "dice" ,
+                                                                       "dices:" ,
+                                                                       "dici" ,
+                                                                       "dicl"^^xsd:string ,
+                                                                       "dicm"^^rdfs:Literal ,
+                                                                       "dicob" ,
+                                                                       "dicp" ,
+                                                                       "dicv" ;
+                 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/0.5/Agents" ,
+                                                                    "https://w3id.org/digitalconstruction/0.5/Contexts" ,
+                                                                    "https://w3id.org/digitalconstruction/0.5/Energy" ,
+                                                                    "https://w3id.org/digitalconstruction/0.5/Entities" ,
+                                                                    "https://w3id.org/digitalconstruction/0.5/Information" ,
+                                                                    "https://w3id.org/digitalconstruction/0.5/Lifecycle" ,
+                                                                    "https://w3id.org/digitalconstruction/0.5/Materials"^^rdfs:Literal ,
+                                                                    "https://w3id.org/digitalconstruction/0.5/Occupancy" ,
+                                                                    "https://w3id.org/digitalconstruction/0.5/Processes" ,
+                                                                    "https://w3id.org/digitalconstruction/0.5/Variables" ;
+                 rdfs:comment "Agents ontology formalize the the representation of the actors and stakeholders over the construction lifecycle, to support data sharing of the social, organizational and contractural relations. The ontology is aligned with BFO, FOAF and ORG." ,
+                              "An ontology to represent the enhancement of building data throughout the construction lifecycle stages"^^xsd:string ,
+                              "Digital Construction Entities Ontology defines the basic classes and properties needed for the representation of construction and renovation projects. Examples are building object, location, material batch, equipment, agent, information content entity, activity and related time concepts. The ontology is based on BFO. " ,
+                              "Digital Construction Information ontology defines the representation of information content entities in construction and renovation, including models, plans, scenarios, messages, issues, videos and point clouds. The focus is on identifiable information contents (such as first version of the architectural model of a project), not on the particular information carries (such as hard disk, cloud storage, paper print)." ,
+                              "Digital Construction Occupancy ontology represents those aspects of construction and renovation projects that concern the comfort, safety and health of occupants, including visual and thermal comfort, indoor air quality and building acoustics, as well as related sensor observations." ;
+                 rdfs:label "Digital Construction Agents" ,
+                            "Digital Construction Contexts" ,
+                            "Digital Construction Energy" ,
+                            "Digital Construction Entities" ,
+                            "Digital Construction Information" ,
+                            "Digital Construction Occupancy" ,
+                            "Digital Construction Processes" ,
+                            "Digital Construction Variables" ;
+                 rdfs:seeAlso <https://w3id.org/digitalconstruction/0.5> ,
+                              <https://w3id.org/digitalconstruction/0.5/> ,
+                              "https://w3id.org/digitalconstruction/0.5"^^xsd:string ;
+                 owl:versionInfo "0.5"^^xsd:string .
 
 #################################################################
 #    Annotation properties
